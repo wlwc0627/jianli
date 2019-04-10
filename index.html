@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>个人简历</title>
+<link rel="stylesheet" type="text/css" href="css/demo.css">
+
+<style type="text/css">
+.container{
+	width: 900px;
+	margin: 20px auto;
+}
+.box{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -38px;
+	margin-left: -100px;
+	width: 200px;
+	height: 76px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.box img{
+	width: 100%;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="box">
+		<img src="img/pdf.jpg" class="ez" href="jianli.pdf" alt="">
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/EZView.js"></script>
+<script type="text/javascript" src="js/draggable.js"></script>
+<script type="text/javascript">
+	window.onload = function(){
+		$('img.ez').EZView();
+	}
+</script>
+</div>
+</body>
+</html>
